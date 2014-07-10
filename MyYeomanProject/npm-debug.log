@@ -2,175 +2,160 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '--global',
-1 verbose cli   'yo' ]
+1 verbose cli   'karma-phantomjs-launcher',
+1 verbose cli   'karma-jasmine',
+1 verbose cli   'grunt-karma',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.9
 3 info using node@v0.10.28
-4 verbose cache add [ 'yo', null ]
-5 verbose cache add name=undefined spec="yo" args=["yo",null]
-6 verbose parsed url { protocol: null,
-6 verbose parsed url   slashes: null,
-6 verbose parsed url   auth: null,
-6 verbose parsed url   host: null,
-6 verbose parsed url   port: null,
-6 verbose parsed url   hostname: null,
-6 verbose parsed url   hash: null,
-6 verbose parsed url   search: null,
-6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'yo',
-6 verbose parsed url   path: 'yo',
-6 verbose parsed url   href: 'yo' }
-7 silly lockFile c41975d1-yo yo
-8 verbose lock yo /home/kartik/.npm/c41975d1-yo.lock
-9 silly lockFile c41975d1-yo yo
-10 silly lockFile c41975d1-yo yo
-11 verbose addNamed [ 'yo', '' ]
-12 verbose addNamed [ null, '*' ]
-13 silly lockFile d937c28e-yo yo@
-14 verbose lock yo@ /home/kartik/.npm/d937c28e-yo.lock
-15 silly addNameRange { name: 'yo', range: '*', hasData: false }
-16 verbose url raw yo
-17 verbose url resolving [ 'https://registry.npmjs.org/', './yo' ]
-18 verbose url resolved https://registry.npmjs.org/yo
-19 info trying registry request attempt 1 at 23:40:06
-20 verbose etag "627X42GZVQ86RTCITX0A0MFWX"
-21 http GET https://registry.npmjs.org/yo
-22 http 304 https://registry.npmjs.org/yo
-23 silly registry.get cb [ 304,
-23 silly registry.get   { date: 'Thu, 10 Jul 2014 18:10:08 GMT',
-23 silly registry.get     server: 'Apache',
-23 silly registry.get     via: '1.1 varnish',
-23 silly registry.get     'last-modified': 'Thu, 10 Jul 2014 18:10:08 GMT',
-23 silly registry.get     'cache-control': 'max-age=30',
-23 silly registry.get     etag: '"627X42GZVQ86RTCITX0A0MFWX"',
-23 silly registry.get     'x-served-by': 'cache-syd1623-SYD',
-23 silly registry.get     'x-cache': 'HIT',
-23 silly registry.get     'x-cache-hits': '1',
-23 silly registry.get     'x-timer': 'S1405015808.209358,VS0,VE204',
-23 silly registry.get     vary: 'Accept',
-23 silly registry.get     'content-length': '0',
-23 silly registry.get     'keep-alive': 'timeout=10, max=50',
-23 silly registry.get     connection: 'Keep-Alive' } ]
-24 verbose etag yo from cache
-25 silly addNameRange number 2 { name: 'yo', range: '*', hasData: true }
-26 silly addNameRange versions [ 'yo',
-26 silly addNameRange   [ '1.0.0-beta.1',
-26 silly addNameRange     '1.0.0-beta.2',
-26 silly addNameRange     '1.0.0-beta.3',
-26 silly addNameRange     '1.0.0-beta.4',
-26 silly addNameRange     '1.0.0-beta.5',
-26 silly addNameRange     '1.0.0-beta.6',
-26 silly addNameRange     '1.0.0-beta.7',
-26 silly addNameRange     '1.0.0-rc.1',
-26 silly addNameRange     '1.0.0-rc.1.1',
-26 silly addNameRange     '1.0.0-rc.1.2',
-26 silly addNameRange     '1.0.0-rc.1.3',
-26 silly addNameRange     '1.0.0-rc.1.4',
-26 silly addNameRange     '1.0.0',
-26 silly addNameRange     '1.0.1',
-26 silly addNameRange     '1.0.2',
-26 silly addNameRange     '1.0.3',
-26 silly addNameRange     '1.0.4',
-26 silly addNameRange     '1.0.5',
-26 silly addNameRange     '1.0.6',
-26 silly addNameRange     '1.0.7-pre.1',
-26 silly addNameRange     '1.0.7-pre.2',
-26 silly addNameRange     '1.0.7-pre.3',
-26 silly addNameRange     '1.1.0',
-26 silly addNameRange     '1.1.1',
-26 silly addNameRange     '1.1.2',
-26 silly addNameRange     '1.2.0' ] ]
-27 verbose addNamed [ 'yo', '1.2.0' ]
-28 verbose addNamed [ '1.2.0', '1.2.0' ]
-29 silly lockFile 43d9b248-yo-1-2-0 yo@1.2.0
-30 verbose lock yo@1.2.0 /home/kartik/.npm/43d9b248-yo-1-2-0.lock
-31 silly lockFile 43d9b248-yo-1-2-0 yo@1.2.0
-32 silly lockFile 43d9b248-yo-1-2-0 yo@1.2.0
-33 silly lockFile d937c28e-yo yo@
-34 silly lockFile d937c28e-yo yo@
-35 silly resolved [ { name: 'yo',
-35 silly resolved     version: '1.2.0',
-35 silly resolved     description: 'CLI tool for running Yeoman generators',
-35 silly resolved     license: 'BSD',
-35 silly resolved     bin: { yo: 'cli.js' },
-35 silly resolved     author: { name: 'The Yeoman Team' },
-35 silly resolved     repository: { type: 'git', url: 'git://github.com/yeoman/yo' },
-35 silly resolved     engines: { node: '>=0.10.0', npm: '>=1.4.3' },
-35 silly resolved     scripts:
-35 silly resolved      { test: 'grunt',
-35 silly resolved        postinstall: 'node ./scripts/doctor',
-35 silly resolved        postupdate: 'node ./scripts/doctor' },
-35 silly resolved     files: [ 'cli.js', 'yoyo.js', 'yeoman.txt', 'scripts' ],
-35 silly resolved     keywords:
-35 silly resolved      [ 'front-end',
-35 silly resolved        'development',
-35 silly resolved        'dev',
-35 silly resolved        'build',
-35 silly resolved        'web',
-35 silly resolved        'tool',
-35 silly resolved        'cli',
-35 silly resolved        'scaffold',
-35 silly resolved        'stack',
-35 silly resolved        'yeoman',
-35 silly resolved        'generator',
-35 silly resolved        'app' ],
-35 silly resolved     dependencies:
-35 silly resolved      { async: '^0.9.0',
-35 silly resolved        chalk: '^0.4.0',
-35 silly resolved        findup: '^0.1.3',
-35 silly resolved        fullname: '^0.1.0',
-35 silly resolved        insight: '^0.3.0',
-35 silly resolved        'is-root': '^0.1.0',
-35 silly resolved        lodash: '^2.4.1',
-35 silly resolved        nopt: '^3.0.0',
-35 silly resolved        opn: '^0.1.1',
-35 silly resolved        shelljs: '^0.3.0',
-35 silly resolved        'string-length': '^0.1.2',
-35 silly resolved        'sudo-block': '^0.4.0',
-35 silly resolved        'update-notifier': '^0.1.3',
-35 silly resolved        'yeoman-generator': '^0.17.0',
-35 silly resolved        yosay: '^0.2.1' },
-35 silly resolved     peerDependencies: { 'grunt-cli': '>=0.1.7', bower: '>=1.0.0' },
-35 silly resolved     devDependencies:
-35 silly resolved      { grunt: '^0.4.2',
-35 silly resolved        'grunt-contrib-jshint': '^0.10.0',
-35 silly resolved        'grunt-contrib-watch': '^0.6.1',
-35 silly resolved        'grunt-mocha-test': '^0.11.0',
-35 silly resolved        mockery: '^1.4.0' },
-35 silly resolved     engineStrict: true,
-35 silly resolved     preferGlobal: true,
-35 silly resolved     readme: '# yo [![Build Status](https://travis-ci.org/yeoman/yo.svg?branch=master)](https://travis-ci.org/yeoman/yo) ![](http://img.shields.io/badge/unicorn-approved-ff69b4.svg)\n\n> CLI tool for running Yeoman [generators](yeoman.io/community-generators.html).\n\n![](screenshot.png)\n\n\n## [Documentation](https://github.com/yeoman/yeoman/wiki)\n\n\n## Options\n\n- `--no-color` flag to disable colors.\n- `--version` (`-v`) Print the current `yo` version.\n- `--help` (`-h`) Print `yo` help menu with the list of found generators\n- `--[no-]insight` to toggle anonymous [Insight](https://github.com/yeoman/insight) tracking which helps us improve Yeoman. Using either of these flags on the first run will prevent you from being prompted about it interactively. The flags can also be used to change it later on.\n- `--generators` will output the available generators\n\n\n## Troubleshooting\n\nRunning `yo doctor` command can help you troubleshoot common issues.\n\nIf `doctor` doesn\'t help, then check opened issues for a similar problem. Open a new issue if your problem haven\'t been reported yet. Make sure to always include the version of `yo` (`yo --version`) and Node.js (`node --version`) you use.\n\nIf your issue only occur using a generator, please report the issues on the generator\'s repository.\n\n\n## Contribute\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md).\n\n\n## Changelog\n\nSee the [release page](https://github.com/yeoman/yo/releases).\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Google.\n',
-35 silly resolved     readmeFilename: 'readme.md',
-35 silly resolved     bugs: { url: 'https://github.com/yeoman/yo/issues' },
-35 silly resolved     homepage: 'https://github.com/yeoman/yo',
-35 silly resolved     _id: 'yo@1.2.0',
-35 silly resolved     _shasum: 'ce499ba3f06963772d77c03e8daefe8686d8047d',
-35 silly resolved     _from: 'yo@',
-35 silly resolved     _resolved: 'https://registry.npmjs.org/yo/-/yo-1.2.0.tgz' } ]
-36 info install yo@1.2.0 into /usr/local/lib
-37 info installOne yo@1.2.0
-38 info /usr/local/lib/node_modules/yo unbuild
-39 info preuninstall yo@1.2.0
-40 info uninstall yo@1.2.0
-41 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild yo@1.2.0
-42 verbose /usr/local/bin,[object Object] binRoot
-43 info /usr/local/lib/node_modules/yo unbuild
-44 info preuninstall yo@1.2.0
-45 info uninstall yo@1.2.0
-46 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild yo@1.2.0
-47 verbose /usr/local/bin,[object Object] binRoot
-48 error error rolling back Error: EACCES, unlink '/usr/local/bin/yo'
-48 error error rolling back  yo@1.2.0 { [Error: EACCES, unlink '/usr/local/bin/yo'] errno: 3, code: 'EACCES', path: '/usr/local/bin/yo' }
-49 error Error: EACCES, unlink '/usr/local/bin/yo'
-49 error  { [Error: EACCES, unlink '/usr/local/bin/yo'] errno: 3, code: 'EACCES', path: '/usr/local/bin/yo' }
-50 error Please try running this command again as root/Administrator.
-51 error System Linux 3.13.0-30-generic
-52 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--global" "yo"
-53 error cwd /home/kartik/Desktop/AngularJS/MyYeomanProject
-54 error node -v v0.10.28
-55 error npm -v 1.4.9
-56 error path /usr/local/bin/yo
-57 error code EACCES
-58 error errno 3
-59 error stack Error: EACCES, unlink '/usr/local/bin/yo'
-60 verbose exit [ 3, true ]
+4 warn package.json myyeomanproject@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'karma-phantomjs-launcher', null ]
+7 verbose cache add name=undefined spec="karma-phantomjs-launcher" args=["karma-phantomjs-launcher",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'karma-phantomjs-launcher',
+8 verbose parsed url   path: 'karma-phantomjs-launcher',
+8 verbose parsed url   href: 'karma-phantomjs-launcher' }
+9 verbose cache add [ 'karma-jasmine', null ]
+10 verbose cache add name=undefined spec="karma-jasmine" args=["karma-jasmine",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'karma-jasmine',
+11 verbose parsed url   path: 'karma-jasmine',
+11 verbose parsed url   href: 'karma-jasmine' }
+12 verbose cache add [ 'grunt-karma', null ]
+13 verbose cache add name=undefined spec="grunt-karma" args=["grunt-karma",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'grunt-karma',
+14 verbose parsed url   path: 'grunt-karma',
+14 verbose parsed url   href: 'grunt-karma' }
+15 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+16 verbose lock karma-phantomjs-launcher /home/kartik/.npm/e0cbf986-karma-phantomjs-launcher.lock
+17 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+18 verbose lock karma-jasmine /home/kartik/.npm/df56d5e8-karma-jasmine.lock
+19 silly lockFile 707ccff9-grunt-karma grunt-karma
+20 verbose lock grunt-karma /home/kartik/.npm/707ccff9-grunt-karma.lock
+21 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+22 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+23 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+24 silly lockFile df56d5e8-karma-jasmine karma-jasmine
+25 silly lockFile 707ccff9-grunt-karma grunt-karma
+26 silly lockFile 707ccff9-grunt-karma grunt-karma
+27 verbose addNamed [ 'karma-phantomjs-launcher', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile cdd40d81-karma-phantomjs-launcher karma-phantomjs-launcher@
+30 verbose lock karma-phantomjs-launcher@ /home/kartik/.npm/cdd40d81-karma-phantomjs-launcher.lock
+31 verbose addNamed [ 'karma-jasmine', '' ]
+32 verbose addNamed [ null, '*' ]
+33 silly lockFile a9316641-karma-jasmine karma-jasmine@
+34 verbose lock karma-jasmine@ /home/kartik/.npm/a9316641-karma-jasmine.lock
+35 verbose addNamed [ 'grunt-karma', '' ]
+36 verbose addNamed [ null, '*' ]
+37 silly lockFile 94531edb-grunt-karma grunt-karma@
+38 verbose lock grunt-karma@ /home/kartik/.npm/94531edb-grunt-karma.lock
+39 silly addNameRange { name: 'karma-phantomjs-launcher', range: '*', hasData: false }
+40 silly addNameRange { name: 'karma-jasmine', range: '*', hasData: false }
+41 silly addNameRange { name: 'grunt-karma', range: '*', hasData: false }
+42 verbose url raw karma-phantomjs-launcher
+43 verbose url resolving [ 'https://registry.npmjs.org/', './karma-phantomjs-launcher' ]
+44 verbose url resolved https://registry.npmjs.org/karma-phantomjs-launcher
+45 info trying registry request attempt 1 at 23:45:27
+46 verbose etag "32CQJK3Y1TU08DETJLUWIDSX9"
+47 http GET https://registry.npmjs.org/karma-phantomjs-launcher
+48 verbose url raw karma-jasmine
+49 verbose url resolving [ 'https://registry.npmjs.org/', './karma-jasmine' ]
+50 verbose url resolved https://registry.npmjs.org/karma-jasmine
+51 info trying registry request attempt 1 at 23:45:27
+52 verbose etag "JFR0DB09Q1B1GA13H8L8XC02"
+53 http GET https://registry.npmjs.org/karma-jasmine
+54 verbose url raw grunt-karma
+55 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-karma' ]
+56 verbose url resolved https://registry.npmjs.org/grunt-karma
+57 info trying registry request attempt 1 at 23:45:27
+58 verbose etag "ER4WHLUZDKUP4MRSVF6NFSJX0"
+59 http GET https://registry.npmjs.org/grunt-karma
+60 http 304 https://registry.npmjs.org/karma-jasmine
+61 silly registry.get cb [ 304,
+61 silly registry.get   { date: 'Thu, 10 Jul 2014 18:15:31 GMT',
+61 silly registry.get     server: 'Apache',
+61 silly registry.get     via: '1.1 varnish',
+61 silly registry.get     'last-modified': 'Thu, 10 Jul 2014 18:15:31 GMT',
+61 silly registry.get     'cache-control': 'max-age=30',
+61 silly registry.get     etag: '"JFR0DB09Q1B1GA13H8L8XC02"',
+61 silly registry.get     'x-served-by': 'cache-syd1620-SYD',
+61 silly registry.get     'x-cache': 'HIT',
+61 silly registry.get     'x-cache-hits': '1',
+61 silly registry.get     'x-timer': 'S1405016131.156165,VS0,VE181',
+61 silly registry.get     vary: 'Accept',
+61 silly registry.get     'content-length': '0',
+61 silly registry.get     'keep-alive': 'timeout=10, max=50',
+61 silly registry.get     connection: 'Keep-Alive' } ]
+62 verbose etag karma-jasmine from cache
+63 silly addNameRange number 2 { name: 'karma-jasmine', range: '*', hasData: true }
+64 silly addNameRange versions [ 'karma-jasmine',
+64 silly addNameRange   [ '0.0.1',
+64 silly addNameRange     '0.0.2',
+64 silly addNameRange     '0.0.3',
+64 silly addNameRange     '0.1.0',
+64 silly addNameRange     '0.1.1',
+64 silly addNameRange     '0.1.2',
+64 silly addNameRange     '0.1.3',
+64 silly addNameRange     '0.1.4',
+64 silly addNameRange     '0.1.5',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.2.1',
+64 silly addNameRange     '0.2.2' ] ]
+65 verbose addNamed [ 'karma-jasmine', '0.1.5' ]
+66 verbose addNamed [ '0.1.5', '0.1.5' ]
+67 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+68 verbose lock karma-jasmine@0.1.5 /home/kartik/.npm/46898725-karma-jasmine-0-1-5.lock
+69 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+70 verbose lock https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz /home/kartik/.npm/cf8824d5--jasmine-karma-jasmine-0-1-5-tgz.lock
+71 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz',
+71 verbose addRemoteTarball   '924c02ddb5d93737eb82832cffd5d75186d34a26' ]
+72 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+73 silly lockFile cf8824d5--jasmine-karma-jasmine-0-1-5-tgz https://registry.npmjs.org/karma-jasmine/-/karma-jasmine-0.1.5.tgz
+74 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+75 silly lockFile 46898725-karma-jasmine-0-1-5 karma-jasmine@0.1.5
+76 silly lockFile a9316641-karma-jasmine karma-jasmine@
+77 silly lockFile a9316641-karma-jasmine karma-jasmine@
+78 error Error: EACCES, mkdir '/home/kartik/tmp/npm-8308-HFB9Gixd'
+78 error  { [Error: EACCES, mkdir '/home/kartik/tmp/npm-8308-HFB9Gixd']
+78 error   errno: 3,
+78 error   code: 'EACCES',
+78 error   path: '/home/kartik/tmp/npm-8308-HFB9Gixd',
+78 error   parent: 'myyeomanproject' }
+79 error Please try running this command again as root/Administrator.
+80 error System Linux 3.13.0-30-generic
+81 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "karma-phantomjs-launcher" "karma-jasmine" "grunt-karma" "--save-dev"
+82 error cwd /home/kartik/Desktop/AngularJS/MyYeomanProject
+83 error node -v v0.10.28
+84 error npm -v 1.4.9
+85 error path /home/kartik/tmp/npm-8308-HFB9Gixd
+86 error code EACCES
+87 error errno 3
+88 error stack Error: EACCES, mkdir '/home/kartik/tmp/npm-8308-HFB9Gixd'
+89 verbose exit [ 3, true ]
